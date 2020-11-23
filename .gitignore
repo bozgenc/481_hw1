@@ -1,0 +1,10 @@
+
+build
+.gradle
+build
+*.settings
+*.classpath
+*.project
+bin/*
+.vscode/*
+.DS_Store
