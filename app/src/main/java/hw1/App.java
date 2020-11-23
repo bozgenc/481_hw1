@@ -10,6 +10,8 @@ import spark.template.mustache.MustacheTemplateEngine;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import java.util.logging.*; 
+
 
 
 public class App {
@@ -30,8 +32,7 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
 
-        Logger logger = LogManager.getLogger(App.class);
-
+        Logger logger = Logger.getLogger(App.class.getName());
 
         int port = Integer.parseInt(System.getenv("PORT"));
         port(port);
